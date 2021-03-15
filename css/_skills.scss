@@ -1,0 +1,162 @@
+.s3 {
+  .container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: $gris_principal;
+    .skill-container {
+      position: relative;
+      width: 500px;
+
+      &:hover {
+        .skills {
+          opacity: 0.5;
+        }
+      }
+
+      h2 {
+        position: relative;
+        left: 50%;
+        transform: translateX(-15%);
+        color: #fff;
+        font-size: 3rem;
+        text-shadow: 0 0 10px rgba($color: $azul_principal, $alpha: 1),
+          0 0 20px rgba($color: $azul_principal, $alpha: 1),
+          0 0 40px rgba($color: $azul_principal, $alpha: 1);
+      }
+
+      .skills {
+        position: relative;
+        display: flex;
+        margin: 20px 0;
+        padding: 24px 10px 18px;
+        background: linear-gradient(#616161 0%, #333 10%, #222);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: 0.5s;
+
+        &:hover {
+          opacity: 1;
+          transform: scale(1.1);
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 50%;
+          background: rgba($color: #000000, $alpha: 0.1);
+          z-index: 10;
+        }
+
+        .name {
+          position: relative;
+          width: 110px;
+          text-align: right;
+          color: #fff;
+          margin-top: -2px;
+          text-transform: uppercase;
+        }
+        .value {
+          position: relative;
+          width: 40px;
+          text-align: left;
+          color: #fff;
+          margin-top: -2px;
+          text-transform: uppercase;
+        }
+
+        .percent {
+          position: relative;
+          width: calc(100% - 150px);
+          height: 20px;
+          margin: 0 10px;
+          border-radius: 10px;
+          background: #151515;
+          box-shadow: inset 0 0 10px #000;
+          overflow: hidden;
+
+          .progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 70%;
+            height: 100%;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: inset 0 0 2px #000;
+            animation: skills 5s ease-in-out forwards;
+          }
+        }
+
+        &:nth-child(2) {
+          .percent {
+            .progress {
+              background: linear-gradient(
+                45deg,
+                #80ffdb,
+                $azul_principal,
+                #6930c3
+              );
+            }
+          }
+        }
+        &:nth-child(3) {
+          .percent {
+            .progress {
+              background: linear-gradient(
+                45deg,
+                #80ffdb,
+                $azul_principal,
+                #6930c3
+              );
+            }
+          }
+        }
+        &:nth-child(4) {
+          .percent {
+            .progress {
+              background: linear-gradient(
+                45deg,
+                #80ffdb,
+                $azul_principal,
+                #6930c3
+              );
+            }
+          }
+        }
+        &:nth-child(5) {
+          .percent {
+            .progress {
+              background: linear-gradient(45deg, #1fe6ff, #673ab7);
+            }
+          }
+        }
+        &:nth-child(6) {
+          .percent {
+            .progress {
+              background: linear-gradient(45deg, #1fe6ff, #673ab7);
+            }
+          }
+        }
+        &:nth-child(7) {
+          .percent {
+            .progress {
+              background: linear-gradient(45deg, #1fe6ff, #673ab7);
+            }
+          }
+        }
+        &:nth-child(8) {
+          .percent {
+            .progress {
+              background: linear-gradient(45deg, #1fe6ff, #673ab7);
+            }
+          }
+        }
+      }
+    }
+  }
+}

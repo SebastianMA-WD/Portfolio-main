@@ -1,0 +1,24 @@
+footer {
+  height: 10vh;
+  width: 100%;
+  background: rgb(37, 37, 37);
+  color: #fff;
+  position: absolute;
+  bottom: -100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .fa-twitter {
+    font-size: 2rem;
+    color: #1da1f2;
+    padding: 0 40px;
+  }
+
+  .fa-github {
+    font-size: 2rem;
+    color: #f5f5f5;
+    padding: 0 40px;
+  }
+}

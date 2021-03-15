@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap");
+@import "variables";
+@import "scrollbar";
+@import "header";
+@import "main_page";
+@import "about_me";
+@import "skills";
+@import "projects";
+@import "contact_me";
+@import "footer";
+@import "animations";
+@import "media";
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background: $gris_principal;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.section {
+  background: $gris_principal;
+
+  .s1 {
+    height: 100vh;
+  }
+}

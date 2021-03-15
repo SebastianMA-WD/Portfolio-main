@@ -1,0 +1,102 @@
+.s2 {
+  display: flex;
+
+  .about-page {
+    position: relative;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .about-me {
+      position: relative;
+      width: 100%;
+      height: 30vh;
+
+      h2 {
+        position: relative;
+        font-size: 6rem;
+        padding-top: 10vh;
+        padding-bottom: 1vh;
+        top: 0%;
+        left: 10%;
+        right: 10%;
+        text-transform: uppercase;
+        font-weight: normal;
+        text-shadow: 0 0 10px rgba($color: $azul_principal, $alpha: 1),
+          0 0 20px rgba($color: $azul_principal, $alpha: 1),
+          0 0 40px rgba($color: $azul_principal, $alpha: 1);
+      }
+
+      .span-div {
+        position: relative;
+        width: 400px;
+        height: 5px;
+        display: flex;
+        left: 9%;
+        top: 0%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10vh;
+
+        .span-line {
+          position: absolute;
+          padding: 20px;
+          width: 400px;
+          height: 5px;
+
+          &::before,
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            height: 30%;
+            width: 50%;
+            border-radius: 2px;
+          }
+
+          &::before {
+            left: 0;
+            border-bottom: 9px solid $azul_principal;
+            width: 60%;
+          }
+
+          &::after {
+            right: 0;
+            border-top: 9px solid $azul_principal;
+            width: 35%;
+          }
+        }
+      }
+    }
+
+    .about-description {
+      overflow: auto;
+      position: relative;
+      width: 100%;
+      height: 70vh;
+      padding-top: 0px;
+
+      .about-text {
+        margin-top: 10%;
+        margin-left: 20%;
+        margin-right: 20%;
+        position: relative;
+        top: 0%;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        text-align: center;
+        font-size: 19px;
+        transition: 1s;
+      }
+    }
+
+    .card-container {
+      h2 {
+        font-size: 4rem;
+      }
+    }
+  }
+}
