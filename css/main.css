@@ -502,6 +502,7 @@
   text-transform: uppercase;
   font-weight: normal;
   text-shadow: 0 0 10px #00b4d8, 0 0 20px #00b4d8, 0 0 40px #00b4d8;
+  z-index: 20;
 }
 
 .projects-page .projects .span-div {
@@ -1102,26 +1103,13 @@ footer .fa-github {
     font-size: 4rem;
   }
   .projects-page .projects .span-div {
-    height: 15%;
+    display: none;
   }
-  .projects-page .projects .span-div .span-line::before, .projects-page .projects .span-div .span-line::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0%;
-    height: 30%;
-    width: 50%;
-    border-radius: 2px;
+  ::-webkit-scrollbar-thumb {
+    all: unset;
   }
-  .projects-page .projects .span-div .span-line::before {
-    left: 0;
-    border-bottom: 9px solid #00b4d8;
-    width: 50%;
-  }
-  .projects-page .projects .span-div .span-line::after {
-    left: 55%;
-    border-top: 9px solid #00b4d8;
-    width: 55%;
+  #progressbar {
+    display: none;
   }
 }
 

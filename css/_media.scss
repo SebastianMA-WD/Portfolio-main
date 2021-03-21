@@ -229,33 +229,17 @@
         font-size: 4rem;
       }
       .span-div {
-        height: 15%;
-        .span-line {
-          &::before,
-          &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0%;
-            height: 30%;
-            width: 50%;
-            border-radius: 2px;
-          }
-
-          &::before {
-            left: 0;
-            border-bottom: 9px solid $azul_principal;
-            width: 50%;
-          }
-
-          &::after {
-            left: 55%;
-            border-top: 9px solid $azul_principal;
-            width: 55%;
-          }
-        }
+        display: none;
       }
     }
+  }
+
+  ::-webkit-scrollbar-thumb {
+    all: unset;
+  }
+
+  #progressbar {
+    display: none;
   }
 }
 
