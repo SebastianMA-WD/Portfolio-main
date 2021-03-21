@@ -12,7 +12,7 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background: linear-gradient(to bottom, #80ffdb, #00b4d8, #6930c3);
-  z-index: 10;
+  z-index: 100000;
 }
 
 .main-header {
@@ -24,7 +24,7 @@
   width: 100vw;
   padding: 0 10vw;
   color: #00b4d8;
-  z-index: 2;
+  z-index: 50;
   transition: 0.4s ease-out;
 }
 
@@ -655,16 +655,15 @@
 }
 
 .contact-page {
-  width: 80%;
+  width: 100%;
   padding: 20px;
 }
 
 .contact-page h2 {
+  margin-bottom: 100px;
   color: #fff;
   position: relative;
   font-size: 3rem;
-  padding-top: 10vh;
-  padding-bottom: 1vh;
   top: 0%;
   left: 10%;
   right: 10%;
@@ -673,123 +672,44 @@
   text-shadow: 0 0 10px #00b4d8, 0 0 20px #00b4d8, 0 0 40px #00b4d8;
 }
 
-.contact-page .row100 {
-  position: relative;
+.contact-page .contact-content {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.contact-page .row100 .col {
-  position: relative;
-  width: 100%;
-  padding: 0 10px;
-  margin: 30px 0 10px;
-  transition: 0.5s;
+.contact-page .contact-content li {
+  list-style: none;
+  padding: 0 30px;
+  flex-basis: 33%;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
-.contact-page .row100 .col .inputBox {
-  position: relative;
-  width: 100%;
-  height: 40px;
-  color: #45f3ff;
+.contact-page .contact-content li .github-contact {
+  color: #f5f5f5;
 }
 
-.contact-page .row100 .col .inputBox input {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  box-shadow: none;
-  border: none;
-  font-size: 18px;
-  padding: 0 10px;
-  z-index: 1;
+.contact-page .contact-content li .twitter-contact {
+  color: #1da1f2;
+}
+
+.contact-page .contact-content li .email-contact {
+  color: #fab2c0;
+}
+
+.contact-page .contact-content li i {
+  color: #00b4d8;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+.contact-page .contact-content li p {
   color: #fff;
-}
-
-.contact-page .row100 .col .inputBox .text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  line-height: 40px;
-  font-size: 18px;
-  padding: 0 10px;
-  display: block;
-  transition: 0.5s;
-  pointer-events: none;
-}
-
-.contact-page .row100 .col .inputBox .line {
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: #00b4d8;
-  transition: 0.5s;
-  border-radius: 2px;
-  pointer-events: none;
-}
-
-.contact-page .row100 .col .inputBox.textarea {
-  position: relative;
-  width: 100%;
-  height: 100px;
-  padding: 0;
-}
-
-.contact-page .row100 .col .inputBox.textarea textarea {
-  height: 100%;
-  resize: none;
-  position: absolute;
-  width: 100%;
-  background: transparent;
-  box-shadow: none;
-  border: none;
-  font-size: 18px;
-  padding: 0 10px;
-  z-index: 1;
-  color: #fff;
-}
-
-.contact-page .row100 .inputBox input:focus + .text,
-.contact-page .row100 .inputBox input:valid + .text {
-  top: -35px;
-  left: -10px;
-}
-
-.contact-page .row100 .inputBox input:focus ~ .line,
-.contact-page .row100 .inputBox input:valid ~ .line {
-  height: 100%;
-}
-
-.contact-page .row100 .inputBox textarea:focus + .text,
-.contact-page .row100 .inputBox textarea:valid + .text {
-  top: -35px;
-  left: -10px;
-}
-
-.contact-page .row100 .inputBox textarea:focus ~ .line,
-.contact-page .row100 .inputBox textarea:valid ~ .line {
-  height: 100%;
-}
-
-input[type="submit"] {
-  border: none;
-  padding: 7px 35px;
-  cursor: pointer;
-  outline: none;
-  background: #00b4d8;
-  color: black;
-  font-size: 18px;
-  border-radius: 2px;
-  transition: 0.3s;
-}
-
-input[type="submit"]:hover {
-  color: #000;
-  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 80px white, 0 0 160px white;
+  text-shadow: 0 0 10px #00b4d8, 0 0 20px #00b4d8, 0 0 40px #00b4d8;
+  margin: 0;
 }
 
 footer {
